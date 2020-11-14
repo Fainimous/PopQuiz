@@ -11,33 +11,40 @@
 <body>
     <!-- Header here with title and border-->
     <header>
-
+        <h1>Test your Azure Identiy Knowledge!</h1>
     </header>
     <!-- Here we want the main card that holds the questions/ answers as well as an aside for the high scores and a container to display the countdown and current score.-->
-    <!-- Main card here-->
-    <div class="container">
-        <div id="Question-container" class="hide">
-            <div id="question">Question</div>
-            <div id="answer-btn" class="btn-grid">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+    <!-- High scores section-->
+    <section class="aside">
+        <h2>High Scores:</h2>
+        <ul>
+            <li>Jimbob: 4</li>
+            <li>Jenny: 3</li>
+            <li>Chris: 1</li>
+        </ul>
+    </section>
+    <!-- Quiz Section-->
+    <section class="quizSection">
+        <div class="container">
+            <div id="question-container" class="hide">
+                <div id="question">Question</div>
+                <div id="answer-btn" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
+            <div class="controls">
+              <button id="start-btn" class="start-btn btn">Start</button>
+               <button id="next-btn" class="next-btn btn hide"></buttonid>Next</button>
             </div>
         </div>
-        <div class="controls">
-            <button id="start-btn" class="start-btn btn">Start</button>
-            <button id="start-btn" class="next-btn btn hide"></buttonid>Next</button>
-        </div>
-    </div>
-    <!-- Aside where the Highscores will be listed-->
-    <aside>
-
-    </aside>
-    <!-- Container where the countdown and Score is displayed-->
-    <div>
-
-    </div>
+    </section>
+    <!-- Timer section-->
+    <section class="aside">
+        <H3>Timer:</H3>
+    </section>
     <!--Link JS here-->
     <script src="./assets/script/script.js"></script>
 </body>

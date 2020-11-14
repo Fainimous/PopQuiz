@@ -1,25 +1,55 @@
 /* Set Variables for colors selected for site theme */
 :root {
     --red: #931621;
-    --white: #F5E0B7;
+    --white: #FFF8F0;
     --black: #040F0F;
     --green: #53A548;
-    --grey: #2D3A3A;
+    --darkgrey: #4E6766;
+    --lightgrey: #716969;
+    --darkblue: #000022;
+    --blue: #5DA9E9;
+    --purple: #2F0A28;
+
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* body styling */
 body {
-    background-color: var(--grey);
+    background-color: var(--lightgrey);
+}
+
+header {
+    padding: 50px;
+    display: block;
+    background-color: var(--darkblue);
+    color: var(--white);
+    font-size: 24px;
+    text-align: center;
+}
+
+section {
+    float: left;
+    text-align: center;
+    width: 15%;
+    height: 100vh;
+}
+
+.aside {
+    color: var(--white);
+}
+
+.quizSection {
     padding: 0;
     margin: 0;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
+    float: left;
     justify-content: center;
     align-items: center;
+    display: flex;
+    width: 70%
 }
+
+
 
 .container {
     width: 800px;
@@ -32,12 +62,29 @@ body {
 
 .btn-grid {
     display: grid;
-    grid-template-columns: repeat(2, auto):
+    grid-template-columns: repeat(2, auto);
     gap: 10px;
     margin: 20px 0;
 }
 
 .btn {
-    border: 1px solid 
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    background-color: var(--blue);
 }
 
+.btn:hover {
+    border-color: var(--black);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
