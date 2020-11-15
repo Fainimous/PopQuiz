@@ -259,7 +259,7 @@ const questions = [
         
     },
     {
-        question: 'The bit of a parrot is about as strong as the bite of which of these animals?',
+        question: 'The bite of a parrot is about as strong as the bite of which of these animals?',
         answers: [
                 { text: 'Crocodile', correct: false },
                 { text: 'Dog', correct: true },
