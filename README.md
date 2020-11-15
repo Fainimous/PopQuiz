@@ -2,9 +2,11 @@
 
 ## Description 
 
-Web app thatbegins a timer as soon as you select the "Start" button.  Answer as many questions as possible before the timer runs out and enter your name at the end to display under the scoreboard.
+Web app that begins a timer as soon as you select the "Start" button.  Answer as many questions as possible before the timer runs out and enter your name at the end to display under the scoreboard.
 
 Wrong answers will deduct 10 seconds from your time!
+
+https://fainimous.github.io/PopQuiz/
 
 ![Screenshot of the Web App](./assets/Images/Screenshot.jpg)
 
