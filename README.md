@@ -6,6 +6,8 @@ Web app that begins a timer as soon as you select the "Start" button.  Answer as
 
 Wrong answers will deduct 10 seconds from your time!
 
+https://fainimous.github.io/PopQuiz/
+
 ![Screenshot of the Web App](./assets/Images/Screenshot.jpg)
 
 ## Sources:
