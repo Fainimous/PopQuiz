@@ -11,17 +11,13 @@
 <body>
     <!-- Header here with title and border-->
     <header>
-        <h1>Test your Azure Identiy Knowledge!</h1>
+        <h1>Bird Quiz!</h1>
     </header>
     <!-- Here we want the main card that holds the questions/ answers as well as an aside for the high scores and a container to display the countdown and current score.-->
     <!-- High scores section-->
     <section class="aside">
-        <h2>High Scores:</h2>
-        <ul>
-            <li>Jimbob: 4</li>
-            <li>Jenny: 3</li>
-            <li>Chris: 1</li>
-        </ul>
+        <h2>Scoreboard:</h2>
+        <ul id="scoreboard"></ul>
     </section>
     <!-- Quiz Section-->
     <section class="quizSection">
@@ -44,6 +40,7 @@
     <!-- Timer section-->
     <section class="aside">
         <H3>Timer:</H3>
+        <h4 id='timer'>60</h4>
     </section>
     <!--Link JS here-->
     <script src="./assets/script/script.js"></script>

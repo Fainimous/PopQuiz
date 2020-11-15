@@ -19,12 +19,20 @@ body {
     background-color: var(--lightgrey);
 }
 
+body.correct {
+    background-color: var(--green);
+}
+
+body.wrong {
+    background-color: var(--red);
+}
+
 header {
     padding: 50px;
     display: block;
     background-color: var(--darkblue);
     color: var(--white);
-    font-size: 24px;
+    font-size: 32px;
     text-align: center;
 }
 
@@ -77,6 +85,14 @@ section {
 
 .btn:hover {
     border-color: var(--black);
+}
+
+.btn.correct {
+    background-color: var(--green);
+}
+
+.btn.wrong {
+    background-color: var(--red);
 }
 
 .controls {
