@@ -6,15 +6,25 @@ var questionContainerEl = document.getElementById('question-container');
 var shuffle, currentQuestionIndex;
 var questionEl = document.getElementById('question');
 var answerButtonEl = document.getElementById('answer-btn');
+
+//Start the timer when the start button is clicked
 startButtonEl.addEventListener('click', startTimer);
+
+//Start the game when the start button is clicked
 startButtonEl.addEventListener('click', startGame);
+
+//When the next button is clicked, increase question index and set the next question
 nextButtonEl.addEventListener('click', () => {
     currentQuestionIndex++;
     setNextQuestion();
 })
+
+//Scorboard variables
 var scoreboardEl = document.getElementById('scoreboard');
 var score = 0;
 var scoreboardList = [];
+
+//post the scores at page load
 renderScores();
 
 //Create a countdown timer to countdown from 60.  When 0 is reached, end the game.
@@ -33,8 +43,9 @@ var timer = setInterval(function () {
 function startGame() {
     timerText.innerText = 60;
     startButtonEl.classList.add('hide');
-    //shuffle the questions so the questions provided to the screen are random each time
+    //shuffle the questions array so the questions provided to the screen are random each time
     shuffle = questions.sort(() => Math.random() - .5);
+    //set current questions index to 0 to get the first question in the shuffled array
     currentQuestionIndex = 0;
     questionContainerEl.classList.remove('hide');
     setNextQuestion();
@@ -44,7 +55,7 @@ function startGame() {
 function setNextQuestion() {
     //clear the deafult items in the HTML
     resetState();
-    //show a random question to the screen
+    //show a question from the shuffled array at the current question index.
     showQuestion(shuffle[currentQuestionIndex]);
 
 }
@@ -52,7 +63,7 @@ function setNextQuestion() {
 function showQuestion(question) {
     //update question element text with the question from array
     questionEl.innerText = question.question;
-    //populate the 4 answers from the answers section of the array
+    //populate the answers from each of the answers in the section of the array
     question.answers.forEach(answers => {
         var button = document.createElement('button');
         button.innerText = answers.text;
@@ -217,7 +228,7 @@ const questions = [
     {
         question: 'Which of these parrots is LEAST likely to learn to talk?',
         answers: [
-                { text: 'Afrigan Grey', correct: false },
+                { text: 'African Grey', correct: false },
                 { text: 'Indian Ringneck', correct: false },
                 { text: 'Sun Conure', correct: true },
                 { text: 'Quaker Parrot', correct: false }
@@ -226,7 +237,7 @@ const questions = [
     
     },
     {
-        question: 'How long is the largest parrot from beak to Tail?',
+        question: 'How long is the largest parrot from beak to tail?',
         answers: [
                 { text: '32 inches', correct: false },
                 { text: '40 inches', correct: true },
